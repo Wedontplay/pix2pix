@@ -8,4 +8,4 @@ echo "---------------------------------------"
 docker build -t sketch2map-development .
 
 #Run docker container
-docker run -v $(pwd):/home/sketch2map -it -p 80:80 -p 8000:8000 painteraction-development bash
+docker run -rm -v $(pwd):/home/sketch2map -it -p 80:80 -p 8000:8000 sketch2map-development bash
