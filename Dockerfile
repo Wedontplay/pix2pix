@@ -10,6 +10,12 @@ RUN apt-get update && apt-get install -y -o Dpkg::Options::="--force-confold" \
 RUN luarocks install nngraph \
 luarocks install https://raw.githubusercontent.com/szym/display/master/display-scm-0.rockspec
 
+# Prepare folders
+RUN mkdir /home/sketch2map
+
+# Add the app
+ADD . /home/sketch2map
+
 #set working directory
 WORKDIR /home/sketch2map
 
