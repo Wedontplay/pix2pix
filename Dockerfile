@@ -3,6 +3,9 @@
 FROM kaixhin/cuda-torch
 MAINTAINER "gambotto@leva.io"
 
+#install invidia key
+RUN wget -qO - http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1404/x86_64/7fa2af80.pub | sudo apt-key add -
+
 #install needed software
 RUN apt-get update && apt-get install -y -o Dpkg::Options::="--force-confold" \
 
