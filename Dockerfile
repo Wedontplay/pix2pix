@@ -1,6 +1,6 @@
 #Dockerfile
 
-FROM docker pull kaixhin/cuda-torch
+FROM kaixhin/cuda-torch
 MAINTAINER "gambotto@leva.io"
 
 #install needed software
